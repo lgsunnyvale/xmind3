@@ -10,7 +10,7 @@ import your freemind maps to XMind, in order to:
  * add fishbone diagrams into mindmaps.
  * add spreadsheets into mindmaps, and treat them as topics.
  * add a legend to show user defined descriptions to each marker.
- * add rich text notes# drilldown into a topic, and focus on it.
+ * add rich text notes
+ * drilldown into a topic, and focus on it.
  * import mindmaps from Mindmanager.
- * share my mindmps with the world, via Share.xmind.net. (like YouTube)
-
+ * share my mindmaps with the world, via [http://share.xmind.net/ Share.xmind.net]. (like YouTube)
