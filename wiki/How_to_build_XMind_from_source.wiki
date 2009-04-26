@@ -1,0 +1,59 @@
+#labels Featured,Phase-Implementation,Phase-Deploy
+#This page illustrates the procedure of building XMind application using source code.
+
+= What you need =
+
+  * XMind source package: http://code.google.com/p/xmind3/downloads/
+  * Eclipse IDE: http://www.eclipse.org/downloads/
+  * XMind standalone application: http://www.xmind.net/downloads/
+
+= Instructions =
+
+== Step 1 - Installation ==
+
+  # Install Eclipse IDE to folder {ECLIPSE}
+  # Install XMind standalone application to folder {XMIND}
+  # Copy the following jar files from {XMIND}/plugins/ (on OS X, right-click or control-click on XMind in Applications folder, select 'Show Package Contents', select Contents -> Resources -> plugins) to {ECLIPSE}/plugins/
+   * net.sourceforge.jazzy_0.5.0.jar
+   * org.bouncycastle_1.3.8.jar
+   * org.json_1.0.0.jar
+  # Launch Eclipse IDE and create a new workspace {WORKSPACE}
+  # Select Help menu -> Software Updates... -> Available Software, install:
+   * 'Graphical Editing Framework Draw2d'
+   * (recommended) 'Graphical Editing Framework Draw2d Developer Resource'
+
+== Step 2 - Importation ==
+
+  # In Eclipse, select File menu -> Import... -> Existing Projects into Workspace
+  # Select the archive file (source package) downloaded from this site
+  # Select all projects and click Finish
+  # After the importing process is over, restart Eclipse
+
+== Step 3 - Configuration ==
+
+  # Select org.xmind.cathy.win32:
+   * If you're not working on Windows, delete this project
+   * Otherwise, 
+    # Select File menu -> Properties -> Java Build Path -> Libraries
+    # Remove org.eclipse.swt.win32.win32.x86_3.4.1.v3449c.jar
+  # If there's still building error, try Project menu -> Clean... -> Clean all projects
+
+== Step 4 - Launching ==
+
+  # Select Run menu -> Run Configurations... (same for Debug Configurations)
+  # Right-click (control-click on OS X) on Eclipse Application -> New
+  # In Main tab,
+   * Name: XMind (or any)
+   * Location: ${workspace_loc}/../runtime-cathy (or any)
+   * Run a product: org.xmind.cathy.product
+  # Switch to Plug-ins tab,
+   # Launch with: plug-ins selected below only
+   # Deselect All
+   # Check only those XMind-related plug-ins, language pack fragments (xx.xx.xx.nl_xx) may be included as needed
+   # Add Required Plug-ins
+  # Apply changes and Run!
+
+= References =
+  * Sincere thanks to Rodrigo Garcia and Max Larin for sharing their experiences in [http://groups.google.com/group/xmind-dev/browse_thread/thread/ee6fcf7d3bb0f825 building XMind from source]
+  * [http://www.eclipse.org/articles/Article-RCP-1/tutorial1.html Basis of Eclipse Rich Client Platform (RCP)]
+  * [http://help.eclipse.org/stable/index.jsp?nav=/2 Eclipse Platform Plug-in Developer Guide]
