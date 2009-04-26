@@ -29,7 +29,7 @@
   # Select all projects and click Finish
   # After the importing process is over, restart Eclipse
 
-== Step 3 - Configuration ==
+== Step 3 - Building ==
 
   # Select org.xmind.cathy.win32:
    * If you're not working on Windows, delete this project
