@@ -1,4 +1,4 @@
-#labels Phase-Implementation,Featured
+#labels Featured
 This document describes the general specification of an XMind file.
 
 An XMind file (workbook) is actually an archived package of several XML files and other attachments compressed using general ZIP algorithm.
@@ -18,7 +18,7 @@ An XMind archive may contain the following components:
 
 = XML Namespaces =
 An XML file in an XMind archive may adopts two kinds of namespaces:
- * Common namespaces defined by general international standards organization
+ * Common namespaces defined by W3C
   * *xhtml*: http://www.w3.org/1999/xhtml
   * *xlink*: http://www.w3.org/1999/xlink
   * *fo*: http://www.w3.org/1999/XSL/Format
