@@ -1,7 +1,7 @@
-#labels Phase-Implementation
-This document describes general specification of an XMind file.
+#labels Phase-Implementation,Featured
+This document describes the general specification of an XMind file.
 
-An XMind file (workbook) is actually a archived package of several XML files and other attachments compressed using general ZIP algorithm.
+An XMind file (workbook) is actually an archived package of several XML files and other attachments compressed using general ZIP algorithm.
 
 = Archive Contents = 
 An XMind archive may contain the following components:
