@@ -149,17 +149,17 @@ topic2.setStructureClass("org.xmind.ui.fishbone.leftHeaded");
 }}}
 The following table lists the various structures availble, and the classes for each.  Always check the API for the version you are using to validate these.
 || *Structure Type* || *Structure class name ||
-||Map (default)           ||"" - empty string||
-||Left Headed Fishbone ||`org.xmind.ui.fishbone.leftHeaded`||
-||Right Headed Fishbone||`org.xmind.ui.fishbone.rightHeaded`||
-||Left Logic Diagram    ||`org.xmind.ui.logic.left`         ||
-||Right Logic Diagram   ||`org.xmind.ui.logic.right`        ||
-||Downward Organization Chart      ||`org.xmind.ui.org-chart.down`     ||
-||Upward Organization Chart        ||`org.xmind.ui.org-chart.up`       ||
-||Spreadsheet   ||`org.xmind.ui.spreadsheet`        ||
-||Left Tree    ||`org.xmind.ui.tree.left`          ||
-||Right Tree   ||`org.xmind.ui.tree.right`         ||
-||Floating      ||`org.xmind.ui.map.floating`       ||
+|| Map (default) || "" - empty string ||
+|| Left Headed Fishbone || `org.xmind.ui.fishbone.leftHeaded` ||
+|| Right Headed Fishbone || `org.xmind.ui.fishbone.rightHeaded` ||
+|| Left Logic Diagram || `org.xmind.ui.logic.left` ||
+|| Right Logic Diagram || `org.xmind.ui.logic.right` ||
+|| Downward Organization Chart || `org.xmind.ui.org-chart.down` ||
+|| Upward Organization Chart || `org.xmind.ui.org-chart.up` ||
+|| Spreadsheet || `org.xmind.ui.spreadsheet` ||
+|| Left Tree || `org.xmind.ui.tree.left` ||
+|| Right Tree || `org.xmind.ui.tree.right` ||
+|| Floating || `org.xmind.ui.map.floating` ||
 
 === Labels ===
 Labels are displayed under a topic, and can provide for additional information.  A topic can have multiple labels, each is displayed on a separate line.
@@ -199,12 +199,12 @@ num.setPrefix("Num: ");
 num.setSuffix("x");
 num.setPrependsParentNumbers(true);
 }}}
-||*Number format name*||*Number format string value*||
-||None||org.xmind.numbering.none||
-||Arabic (1, 2, 3, ...)||org.xmind.numbering.arabic||
-||Roman (I, II, III, ...)||org.xmind.numbering.roman||
-||a, b, c, ...||org.xmind.numbering.lowercase||
-||A, B, C, ...||org.xmind.numbering.uppercase||
+|| *Number format name* || *Number format string value* ||
+|| None || org.xmind.numbering.none ||
+|| Arabic (1, 2, 3, ...) || org.xmind.numbering.arabic ||
+|| Roman (I, II, III, ...) || org.xmind.numbering.roman ||
+|| a, b, c, ... || org.xmind.numbering.lowercase ||
+|| A, B, C, ... || org.xmind.numbering.uppercase ||
 
 == Setting the style (or making topics look pretty) ==
 
@@ -247,72 +247,72 @@ style.setProperty(Styles.Textcolor, “0xffffff”);  // text color white
 The following table is a list of the appropriate style names and values as defined in `Styles`.    This is not meant to be an exhaustive list, but as a quick reference.  Always check the API for the version you are using.
 
 || *Styles Name* || *Styles values* ||
-||ShapeClass||DEFAULT||
-|| ||TOPIC_SHAPE_ROUNDEDRECT||
-|| ||TOPIC_SHAPE_RECT||
-|| ||TOPIC_SHAPE_ELLIPSE||
-|| ||TOPIC_SHAPE_UNDERLINE||
-|| ||TOPIC_SHAPE_DIAMOND||
-|| ||TOPIC_SHAPE_CALLOUT_ELLIPSE||
-|| ||TOPIC_SHAPE_CALLOUT_ROUNDEDRECT||
-|| ||TOPIC_SHAPE_NO_BORDER||
-||LineClass||DEF_BRANCH_DECORATION||
-|| ||BRANCH_CONN_STRAIGHT||
-|| ||BRANCH_CONN_CURVE||
-|| ||BRANCH_CONN_ARROWED_CURVE||
-|| ||BRANCH_CONN_ROUNDEDELBOW||
-|| ||BRANCH_CONN_ELBOW||
-|| ||BRANCH_CONN_NONE||
-||FillColor||DEF_TOPIC_FILL_COLOR||
-|| ||NONE||
-|| ||Color RGB Value in hex – ex 0xffffff for Black `*``*`||
-||LineColor||DEF_TOPIC_LINE_COLOR||
-|| ||NONE||
-|| ||Color RGB Value in hex – ex 0xffffff for Black `*``*`||
-||TextColor||DEF_TEXT_COLOR||
-|| ||NONE||
-|| ||Color RGB Value in hex – ex 0xffffff for Black `*``*`||
-||LinePattern||DEFAULT||
-|| ||LINE_PATTERN_SOLID||
-|| ||LINE_PATTERN_DASH||
-|| ||LINE_PATTERN_DOT||
-|| ||LINE_PATTERN_DASH_DOT||
-|| ||LINE_PATTERN_DASH_DOT_DOT||
-||LineWidth||DEFAULT||
-|| ||1pt`*`*||
-|| ||2pt`*`*||
-|| ||3pt`*`*||
-|| ||4pt`*`*||
-|| ||5pt`*`*||
-||FontStyle||DEFAULT||
-|| ||FONT_STYLE_ITALIC||
-||FontWeight||DEFAULT||
-|| ||FONT_WEIGHT_BOLD||
-||FontSize||DEFAULT||
-|| ||8pt`*`*||
-|| ||9pt`*`*||
-|| ||10pt`*`*||
-|| ||11pt`*`*||
-|| ||12pt`*`*||
-|| ||14pt`*`*||
-|| ||16pt`*`*||
-|| ||18pt`*`*||
-|| ||20pt`*`*||
-|| ||22pt`*`*||
-|| ||24pt`*`*||
-|| ||36pt`*`*||
-|| ||48pt`*`*||
-|| ||56pt`*`*||
-|| ||64pt`*`*||
-|| ||72pt`*`*||
-||TextDecoration||DEFAULT||
-|| ||TEXT_DECORATION_UNDERLINE||
-|| ||TEXT_DECORATION_LINE_THROUGH||
-|| ||TEXT_UNDERLINE_AND_LINE_THROUGH||
-||TextAlign||DEFAULT||
-|| ||ALIGN_CENTER||
-|| ||ALIGN_LEFT||
-|| ||ALIGN_RIGHT||
+|| ShapeClass || DEFAULT ||
+|| || TOPIC_SHAPE_ROUNDEDRECT ||
+|| || TOPIC_SHAPE_RECT ||
+|| || TOPIC_SHAPE_ELLIPSE ||
+|| || TOPIC_SHAPE_UNDERLINE ||
+|| || TOPIC_SHAPE_DIAMOND ||
+|| || TOPIC_SHAPE_CALLOUT_ELLIPSE ||
+|| || TOPIC_SHAPE_CALLOUT_ROUNDEDRECT ||
+|| || TOPIC_SHAPE_NO_BORDER ||
+|| LineClass || DEF_BRANCH_DECORATION ||
+|| || BRANCH_CONN_STRAIGHT ||
+|| || BRANCH_CONN_CURVE ||
+|| || BRANCH_CONN_ARROWED_CURVE ||
+|| || BRANCH_CONN_ROUNDEDELBOW ||
+|| || BRANCH_CONN_ELBOW ||
+|| || BRANCH_CONN_NONE ||
+|| FillColor || DEF_TOPIC_FILL_COLOR ||
+|| || NONE ||
+|| || Color RGB Value in hex – ex 0xffffff for Black `*``*` ||
+|| LineColor || DEF_TOPIC_LINE_COLOR ||
+|| || NONE ||
+|| || Color RGB Value in hex – ex 0xffffff for Black `*``*` ||
+|| TextColor || DEF_TEXT_COLOR ||
+|| || NONE ||
+|| || Color RGB Value in hex – ex 0xffffff for Black `*``*` ||
+|| LinePattern || DEFAULT ||
+|| || LINE_PATTERN_SOLID ||
+|| || LINE_PATTERN_DASH ||
+|| || LINE_PATTERN_DOT ||
+|| || LINE_PATTERN_DASH_DOT ||
+|| || LINE_PATTERN_DASH_DOT_DOT ||
+|| LineWidth || DEFAULT ||
+|| || 1pt`*`* ||
+|| || 2pt`*`* ||
+|| || 3pt`*`* ||
+|| || 4pt`*`* ||
+|| || 5pt`*`* ||
+|| FontStyle || DEFAULT ||
+|| || FONT_STYLE_ITALIC ||
+|| FontWeight || DEFAULT ||
+|| || FONT_WEIGHT_BOLD ||
+|| FontSize || DEFAULT ||
+|| || 8pt`*`* ||
+|| || 9pt`*`* ||
+|| || 10pt`*`* ||
+|| || 11pt`*`* ||
+|| || 12pt`*`* ||
+|| || 14pt`*`* ||
+|| || 16pt`*`* ||
+|| || 18pt`*`* ||
+|| || 20pt`*`* ||
+|| || 22pt`*`* ||
+|| || 24pt`*`* ||
+|| || 36pt`*`* ||
+|| || 48pt`*`* ||
+|| || 56pt`*`* ||
+|| || 64pt`*`* ||
+|| || 72pt`*`* ||
+|| TextDecoration || DEFAULT ||
+|| || TEXT_DECORATION_UNDERLINE ||
+|| || TEXT_DECORATION_LINE_THROUGH ||
+|| || TEXT_UNDERLINE_AND_LINE_THROUGH ||
+|| TextAlign || DEFAULT ||
+|| || ALIGN_CENTER ||
+|| || ALIGN_LEFT ||
+|| || ALIGN_RIGHT ||
 
 `*` These values are strings that are not defined in Styles
 
@@ -455,57 +455,57 @@ if (style == null) {
 }}}
 
 || *Styles Name* || *Styles values* ||
-||ShapeClass||DEFAULT||
-|| ||BOUNDARY_SHAPE_ROUNDEDRECT||
-|| ||BOUNDARY_SHAPE_RECT||
-|| ||BOUNDARY_SHAPE_SCALLOPS||
-|| ||BOUNDARY_SHAPE_WAVES||
-|| ||BOUNDARY_SHAPE_TENSION||
-||FillColor||DEF_TOPIC_FILL_COLOR||
-|| ||NONE||
-|| ||Color RGB Value in hex – ex 0xffffff for Black `*``*`||
-||Opacity||0.0 - 1.00 - percentage value `*``*``*`||
-||LineWidth||DEFAULT||
-|| ||1pt`*`*||
-|| ||2pt`*`*||
-|| ||3pt`*`*||
-|| ||4pt`*`*||
-|| ||5pt`*`*||
-||LineColor||DEF_TOPIC_LINE_COLOR||
-|| ||NONE||
-|| ||Color RGB Value in hex – ex 0xffffff for Black `*``*`||
-||TextColor||DEF_TEXT_COLOR||
-|| ||NONE||
-|| ||Color RGB Value in hex – ex 0xffffff for Black `*``*`||
-||FontStyle||DEFAULT||
-|| ||FONT_STYLE_ITALIC||
-||FontWeight||DEFAULT||
-|| ||FONT_WEIGHT_BOLD||
-||FontSize||DEFAULT||
-|| ||8pt`*`*||
-|| ||9pt`*`*||
-|| ||10pt`*`*||
-|| ||11pt`*`*||
-|| ||12pt`*`*||
-|| ||14pt`*`*||
-|| ||16pt`*`*||
-|| ||18pt`*`*||
-|| ||20pt`*`*||
-|| ||22pt`*`*||
-|| ||24pt`*`*||
-|| ||36pt`*`*||
-|| ||48pt`*`*||
-|| ||56pt`*`*||
-|| ||64pt`*`*||
-|| ||72pt`*`*||
-||TextDecoration||DEFAULT||
-|| ||TEXT_DECORATION_UNDERLINE||
-|| ||TEXT_DECORATION_LINE_THROUGH||
-|| ||TEXT_UNDERLINE_AND_LINE_THROUGH||
-||TextAlign||DEFAULT||
-|| ||ALIGN_CENTER||
-|| ||ALIGN_LEFT||
-|| ||ALIGN_RIGHT||
+|| ShapeClass || DEFAULT ||
+|| || BOUNDARY_SHAPE_ROUNDEDRECT ||
+|| || BOUNDARY_SHAPE_RECT ||
+|| || BOUNDARY_SHAPE_SCALLOPS ||
+|| || BOUNDARY_SHAPE_WAVES ||
+|| || BOUNDARY_SHAPE_TENSION ||
+|| FillColor || DEF_TOPIC_FILL_COLOR ||
+|| || NONE ||
+|| || Color RGB Value in hex – ex 0xffffff for Black `*``*` ||
+|| Opacity || 0.0 - 1.00 - percentage value `*``*``*` ||
+|| LineWidth || DEFAULT ||
+|| || 1pt`*`* ||
+|| || 2pt`*`* ||
+|| || 3pt`*`* ||
+|| || 4pt`*`* ||
+|| || 5pt`*`* ||
+|| LineColor || DEF_TOPIC_LINE_COLOR ||
+|| || NONE ||
+|| || Color RGB Value in hex – ex 0xffffff for Black `*``*` ||
+|| TextColor || DEF_TEXT_COLOR ||
+|| || NONE ||
+|| || Color RGB Value in hex – ex 0xffffff for Black `*``*` ||
+|| FontStyle || DEFAULT ||
+|| || FONT_STYLE_ITALIC ||
+|| FontWeight || DEFAULT ||
+|| || FONT_WEIGHT_BOLD ||
+|| FontSize || DEFAULT ||
+|| || 8pt`*`* ||
+|| || 9pt`*`* ||
+|| || 10pt`*`* ||
+|| || 11pt`*`* ||
+|| || 12pt`*`* ||
+|| || 14pt`*`* ||
+|| || 16pt`*`* ||
+|| || 18pt`*`* ||
+|| || 20pt`*`* ||
+|| || 22pt`*`* ||
+|| || 24pt`*`* ||
+|| || 36pt`*`* ||
+|| || 48pt`*`* ||
+|| || 56pt`*`* ||
+|| || 64pt`*`* ||
+|| || 72pt`*`* ||
+|| TextDecoration || DEFAULT ||
+|| || TEXT_DECORATION_UNDERLINE ||
+|| || TEXT_DECORATION_LINE_THROUGH ||
+|| || TEXT_UNDERLINE_AND_LINE_THROUGH ||
+|| TextAlign || DEFAULT ||
+|| || ALIGN_CENTER ||
+|| || ALIGN_LEFT ||
+|| || ALIGN_RIGHT ||
 
 `*``*``*` Opacity is expressed as a two digit percentage - i.e. 24% is 0.24
 == Summaries ==
@@ -538,52 +538,52 @@ if (style == null) {
 }}}
 
 || *Styles Name* || *Styles values* ||
-||ShapeClass||DEFAULT||
-|| ||SUMMARY_SHAPE_ANGLE||
-|| ||SUMMARY_SHAPE_ROUND||
-|| ||SUMMARY_SHAPE_SQUARE||
-|| ||SUMMARY_SHAPE_CURLY||
-||LineWidth||DEFAULT||
-|| ||1pt`*`*||
-|| ||2pt`*`*||
-|| ||3pt`*`*||
-|| ||4pt`*`*||
-|| ||5pt`*`*||
-||LineColor||DEF_TOPIC_LINE_COLOR||
-|| ||NONE||
-|| ||Color RGB Value in hex – ex 0xffffff for Black `*``*`||
-||TextColor||DEF_TEXT_COLOR||
-|| ||NONE||
-|| ||Color RGB Value in hex – ex 0xffffff for Black `*``*`||
-||FontStyle||DEFAULT||
-|| ||FONT_STYLE_ITALIC||
-||FontWeight||DEFAULT||
-|| ||FONT_WEIGHT_BOLD||
-||FontSize||DEFAULT||
-|| ||8pt`*`*||
-|| ||9pt`*`*||
-|| ||10pt`*`*||
-|| ||11pt`*`*||
-|| ||12pt`*`*||
-|| ||14pt`*`*||
-|| ||16pt`*`*||
-|| ||18pt`*`*||
-|| ||20pt`*`*||
-|| ||22pt`*`*||
-|| ||24pt`*`*||
-|| ||36pt`*`*||
-|| ||48pt`*`*||
-|| ||56pt`*`*||
-|| ||64pt`*`*||
-|| ||72pt`*`*||
-||TextDecoration||DEFAULT||
-|| ||TEXT_DECORATION_UNDERLINE||
-|| ||TEXT_DECORATION_LINE_THROUGH||
-|| ||TEXT_UNDERLINE_AND_LINE_THROUGH||
-||TextAlign||DEFAULT||
-|| ||ALIGN_CENTER||
-|| ||ALIGN_LEFT||
-|| ||ALIGN_RIGHT||
+|| ShapeClass || DEFAULT ||
+|| || SUMMARY_SHAPE_ANGLE ||
+|| || SUMMARY_SHAPE_ROUND ||
+|| || SUMMARY_SHAPE_SQUARE ||
+|| || SUMMARY_SHAPE_CURLY ||
+|| LineWidth || DEFAULT ||
+|| || 1pt`*`* ||
+|| || 2pt`*`* ||
+|| || 3pt`*`* ||
+|| || 4pt`*`* ||
+|| || 5pt`*`* ||
+|| LineColor || DEF_TOPIC_LINE_COLOR ||
+|| || NONE ||
+|| || Color RGB Value in hex – ex 0xffffff for Black `*``*` ||
+|| TextColor || DEF_TEXT_COLOR ||
+|| || NONE ||
+|| || Color RGB Value in hex – ex 0xffffff for Black `*``*` ||
+|| FontStyle || DEFAULT ||
+|| || FONT_STYLE_ITALIC ||
+|| FontWeight || DEFAULT ||
+|| || FONT_WEIGHT_BOLD ||
+|| FontSize || DEFAULT ||
+|| || 8pt`*`* ||
+|| || 9pt`*`* ||
+|| || 10pt`*`* ||
+|| || 11pt`*`* ||
+|| || 12pt`*`* ||
+|| || 14pt`*`* ||
+|| || 16pt`*`* ||
+|| || 18pt`*`* ||
+|| || 20pt`*`* ||
+|| || 22pt`*`* ||
+|| || 24pt`*`* ||
+|| || 36pt`*`* ||
+|| || 48pt`*`* ||
+|| || 56pt`*`* ||
+|| || 64pt`*`* ||
+|| || 72pt`*`* ||
+|| TextDecoration || DEFAULT ||
+|| || TEXT_DECORATION_UNDERLINE ||
+|| || TEXT_DECORATION_LINE_THROUGH ||
+|| || TEXT_UNDERLINE_AND_LINE_THROUGH ||
+|| TextAlign || DEFAULT ||
+|| || ALIGN_CENTER ||
+|| || ALIGN_LEFT ||
+|| || ALIGN_RIGHT ||
 
 == Extending Topics ==
 An extremely powerful capability within the Xmind API that is not available from the UI is the capability to add extensions to topics.  The topic extension mechanism
@@ -698,12 +698,12 @@ if (style == null) {
 }}}
 
 || *Styles Name* || *Styles values* ||
-||FillColor||DEF_SHEET_FILL_COLOR||
-|| ||NONE||
-|| ||Color RGB Value in hex – ex 0xffffff for Black `*``*`||
-||Opacity||0.0 - 1.00 - percentage value `*``*``*`||
-||LineTapered||tapered||
-||background||`*``*``*``*`||
+|| FillColor || DEF_SHEET_FILL_COLOR ||
+|| || NONE ||
+|| || Color RGB Value in hex – ex 0xffffff for Black `*``*` ||
+|| Opacity || 0.0 - 1.00 - percentage value `*``*``*` ||
+|| LineTapered || tapered ||
+|| background || `*``*``*``*` ||
 
 `*``*``*``*` Sheet backgrounds are a special case of a style.  The value here is actually an attachment file (like topic attachments).
 The opacity style only applies to background.
@@ -736,75 +736,75 @@ if (style == null) {
 }}}
 
 || *Styles Name* || *Styles values* ||
-||ShapeClass||DEFAULT||
-|| ||REL_SHAPE_CURVED||
-|| ||REL_SHAPE_ANGLE||
-|| ||REL_SHAPE_STRAIGHT||
-||LinePattern||DEFAULT||
-|| ||LINE_PATTERN_SOLID||
-|| ||LINE_PATTERN_DASH||
-|| ||LINE_PATTERN_DOT||
-|| ||LINE_PATTERN_DASH_DOT||
-|| ||LINE_PATTERN_DASH_DOT_DOT||
-||LineWidth||DEFAULT||
-|| ||1pt`*`*||
-|| ||2pt`*`*||
-|| ||3pt`*`*||
-|| ||4pt`*`*||
-|| ||5pt`*`*||
-||LineColor||DEF_TOPIC_LINE_COLOR||
-|| ||NONE||
-|| ||Color RGB Value in hex – ex 0xffffff for Black `*``*`||
-||ArrowBeginClass||ARROW_SHAPE_NORMAL||
-|| ||ARROW_SHAPE_NORMAL||
-|| ||ARROW_SHAPE_SPEARHEAD||
-|| ||ARROW_SHAPE_DOT||
-|| ||ARROW_SHAPE_TRIANGLE||
-|| ||ARROW_SHAPE_SQUARE||
-|| ||ARROW_SHAPE_DIAMOND||
-|| ||ARROW_SHAPE_HERRINGBONE||
-|| ||ARROW_SHAPE_NONE||
-||ArrowEndClass||ARROW_SHAPE_NORMAL||
-|| ||ARROW_SHAPE_NORMAL||
-|| ||ARROW_SHAPE_SPEARHEAD||
-|| ||ARROW_SHAPE_DOT||
-|| ||ARROW_SHAPE_TRIANGLE||
-|| ||ARROW_SHAPE_SQUARE||
-|| ||ARROW_SHAPE_DIAMOND||
-|| ||ARROW_SHAPE_HERRINGBONE||
-|| ||ARROW_SHAPE_NONE||
-||TextColor||DEF_TEXT_COLOR||
-|| ||NONE||
-|| ||Color RGB Value in hex – ex 0xffffff for Black `*``*`||
-||FontStyle||DEFAULT||
-|| ||FONT_STYLE_ITALIC||
-||FontWeight||DEFAULT||
-|| ||FONT_WEIGHT_BOLD||
-||FontSize||DEFAULT||
-|| ||8pt`*`*||
-|| ||9pt`*`*||
-|| ||10pt`*`*||
-|| ||11pt`*`*||
-|| ||12pt`*`*||
-|| ||14pt`*`*||
-|| ||16pt`*`*||
-|| ||18pt`*`*||
-|| ||20pt`*`*||
-|| ||22pt`*`*||
-|| ||24pt`*`*||
-|| ||36pt`*`*||
-|| ||48pt`*`*||
-|| ||56pt`*`*||
-|| ||64pt`*`*||
-|| ||72pt`*`*||
-||TextDecoration||DEFAULT||
-|| ||TEXT_DECORATION_UNDERLINE||
-|| ||TEXT_DECORATION_LINE_THROUGH||
-|| ||TEXT_UNDERLINE_AND_LINE_THROUGH||
-||TextAlign||DEFAULT||
-|| ||ALIGN_CENTER||
-|| ||ALIGN_LEFT||
-|| ||ALIGN_RIGHT||
+|| ShapeClass || DEFAULT ||
+|| || REL_SHAPE_CURVED ||
+|| || REL_SHAPE_ANGLE ||
+|| || REL_SHAPE_STRAIGHT ||
+|| LinePattern || DEFAULT ||
+|| || LINE_PATTERN_SOLID ||
+|| || LINE_PATTERN_DASH ||
+|| || LINE_PATTERN_DOT ||
+|| || LINE_PATTERN_DASH_DOT ||
+|| || LINE_PATTERN_DASH_DOT_DOT ||
+|| LineWidth || DEFAULT ||
+|| || 1pt`*`* ||
+|| || 2pt`*`* ||
+|| || 3pt`*`* ||
+|| || 4pt`*`* ||
+|| || 5pt`*`* ||
+|| LineColor || DEF_TOPIC_LINE_COLOR ||
+|| || NONE ||
+|| || Color RGB Value in hex – ex 0xffffff for Black `*``*` ||
+|| ArrowBeginClass || ARROW_SHAPE_NORMAL ||
+|| || ARROW_SHAPE_NORMAL ||
+|| || ARROW_SHAPE_SPEARHEAD ||
+|| || ARROW_SHAPE_DOT ||
+|| || ARROW_SHAPE_TRIANGLE ||
+|| || ARROW_SHAPE_SQUARE ||
+|| || ARROW_SHAPE_DIAMOND ||
+|| || ARROW_SHAPE_HERRINGBONE ||
+|| || ARROW_SHAPE_NONE ||
+|| ArrowEndClass || ARROW_SHAPE_NORMAL ||
+|| || ARROW_SHAPE_NORMAL ||
+|| || ARROW_SHAPE_SPEARHEAD ||
+|| || ARROW_SHAPE_DOT ||
+|| || ARROW_SHAPE_TRIANGLE ||
+|| || ARROW_SHAPE_SQUARE ||
+|| || ARROW_SHAPE_DIAMOND ||
+|| || ARROW_SHAPE_HERRINGBONE ||
+|| || ARROW_SHAPE_NONE ||
+|| TextColor || DEF_TEXT_COLOR ||
+|| || NONE ||
+|| || Color RGB Value in hex – ex 0xffffff for Black `*``*` ||
+|| FontStyle || DEFAULT ||
+|| || FONT_STYLE_ITALIC ||
+|| FontWeight || DEFAULT ||
+|| || FONT_WEIGHT_BOLD ||
+|| FontSize || DEFAULT ||
+|| || 8pt`*`* ||
+|| || 9pt`*`* ||
+|| || 10pt`*`* ||
+|| || 11pt`*`* ||
+|| || 12pt`*`* ||
+|| || 14pt`*`* ||
+|| || 16pt`*`* ||
+|| || 18pt`*`* ||
+|| || 20pt`*`* ||
+|| || 22pt`*`* ||
+|| || 24pt`*`* ||
+|| || 36pt`*`* ||
+|| || 48pt`*`* ||
+|| || 56pt`*`* ||
+|| || 64pt`*`* ||
+|| || 72pt`*`* ||
+|| TextDecoration || DEFAULT ||
+|| || TEXT_DECORATION_UNDERLINE ||
+|| || TEXT_DECORATION_LINE_THROUGH ||
+|| || TEXT_UNDERLINE_AND_LINE_THROUGH ||
+|| TextAlign || DEFAULT ||
+|| || ALIGN_CENTER ||
+|| || ALIGN_LEFT ||
+|| || ALIGN_RIGHT ||
 
 One of the interesting points with relationships is they each have two control points, which are used to control the shape of the relationship.
 By default the control points lie along the line between the two topics, however they can be moved, curving the line (depending on the shape class being
@@ -860,51 +860,51 @@ and TopicAdd event then the source is the parent topic, while the target is the 
 
 Some of the more useful events to listen to are listed in the table below, along with the types of objects available in the event.  Note - this is not an exhaustive list of event - see the API for org.xmind.core.CORE
 for all events.
-||*Event type*||*Event Description*||*Event Source*||*New Value*||*Target*||
-||Core.BoundaryAdd||add a boundary||ITopic|| ||IBoundary||
-||Core.BoundaryRemove||remove a boundary||ITopic|| ||IBoundary||
-||Core.EndIndex||set the end index on a boundary||IBoundary|| || ||
-||Core.EndIndex||set the end index on a summary||ISummary|| || ||
-||Core.ImageAlignment||top or bottom||IImage|| || ||
-||Core.ImageHeight||height of image||IImage|| || ||
-||Core.ImageSource||image||IImage|| || ||
-||Core.ImageWidth||width of image||IImage|| || ||
-||Core.Labels||add labels||ITopic|| || ||
-||Core.MarkerRefAdd||add a defined marker||ITopic|| ||String (marker ID)||
-||Core.MarkerRemove||remove a defined marker||ITopic|| ||String (marker ID)||
-||Core.NumberFormat||type of outline number||INumbering|| || ||
-||Core.NumberingPrefix||prefix to number||INumbering|| || ||
-||Core.NumberingSuffix||suffix to number||INumbering|| || ||
-||Core.NumberPrepending||add the parent number||INumbering|| || ||
-||Core.Position||set the position on a control point||IControlPoint||Point|| ||
-||Core.Position||set the position on a topic||ITopic||Point|| ||
-||Core.RelationshipAdd||add a relationship||ISheet|| ||IRelationship||
-||Core.RelationshipEnd1||change the source of a relationship||IRelationship|| || ||
-||Core.RelationshipEnd2||change the target of a relationship||IRelationship|| || ||
-||Core.RelationshipRemove||remove a relationship||ISheet|| ||IRelationship||
-||Core.SheetAdd||add a sheet|| || ||ISheet||
-||Core.SheetMove||move a sheet|| || ||ISheet||
-||Core.SheetRemove||remove a sheet|| || ||ISheet||
-||Core.StartIndex||set the start index on a boundary||IBoundary|| || ||
-||Core.StartIndex||set the start index on a summary||ISummary|| || ||
-||Core.StructureClass||change the structure class||ITopic||String|| ||
-||Core.Style||set the style id on a boundary||IBoundary|| || ||
-||Core.Style||set the style id on a relationship||IRelationship|| || ||
-||Core.Style||set the style id on a sheet||ISheet|| || ||
-||Core.Style||set the style id on a summary||ISummary|| || ||
-||Core.Style||set the style id on a topic||ITopic|| || ||
-||Core.SummaryAdd||add a summary||ITopic|| ||ISummary||
-||Core.SummaryRemove||remove a summary||ITopic|| ||ISummary||
-||Core.TitleText||set title text on a boundary||IBoundary||String|| ||
-||Core.TitleText||set title text on a relationship||IRelationship||String|| ||
-||Core.TitleText||set title text on a sheet||ISheet||String|| ||
-||Core.TitleText||set title text on a topic||ITopic||String|| ||
-||Core.TitleWidth||set the width of the title on a topic||ITopic||Integer|| ||
-||Core.TopicAdd||add topic||ITopic (parent)|| ||ITopic (new)||
-||Core.TopicFolded||hide children||ITopic|| || ||
-||Core.TopicHyperlink||set a hyperlink / attachment||ITopic|| || ||
-||Core.TopicNotes||notes||ITopic|| || ||
-||Core.TopicRemove||remove topic||ITopic (parent)|| ||ITopic||
+|| *Event type* || *Event Description* || *Event Source* || *New Value* || *Target* ||
+|| Core.BoundaryAdd || add a boundary || ITopic || || IBoundary ||
+|| Core.BoundaryRemove || remove a boundary || ITopic || || IBoundary ||
+|| Core.EndIndex || set the end index on a boundary || IBoundary || || ||
+|| Core.EndIndex || set the end index on a summary || ISummary || || ||
+|| Core.ImageAlignment || top or bottom || IImage || || ||
+|| Core.ImageHeight || height of image || IImage || || ||
+|| Core.ImageSource || image || IImage || || ||
+|| Core.ImageWidth || width of image || IImage || || ||
+|| Core.Labels || add labels || ITopic || || ||
+|| Core.MarkerRefAdd || add a defined marker || ITopic || || String (marker ID) ||
+|| Core.MarkerRemove || remove a defined marker || ITopic || || String (marker ID) ||
+|| Core.NumberFormat || type of outline number || INumbering || || ||
+|| Core.NumberingPrefix || prefix to number || INumbering || || ||
+|| Core.NumberingSuffix || suffix to number || INumbering || || ||
+|| Core.NumberPrepending || add the parent number || INumbering || || ||
+|| Core.Position || set the position on a control point || IControlPoint || Point || ||
+|| Core.Position || set the position on a topic || ITopic || Point || ||
+|| Core.RelationshipAdd || add a relationship || ISheet || || IRelationship ||
+|| Core.RelationshipEnd1 || change the source of a relationship || IRelationship || || ||
+|| Core.RelationshipEnd2 || change the target of a relationship || IRelationship || || ||
+|| Core.RelationshipRemove || remove a relationship || ISheet || || IRelationship ||
+|| Core.SheetAdd || add a sheet || || || ISheet ||
+|| Core.SheetMove || move a sheet || || || ISheet ||
+|| Core.SheetRemove || remove a sheet || || || ISheet ||
+|| Core.StartIndex || set the start index on a boundary || IBoundary || || ||
+|| Core.StartIndex || set the start index on a summary || ISummary || || ||
+|| Core.StructureClass || change the structure class || ITopic || String || ||
+|| Core.Style || set the style id on a boundary || IBoundary || || ||
+|| Core.Style || set the style id on a relationship || IRelationship || || ||
+|| Core.Style || set the style id on a sheet || ISheet || || ||
+|| Core.Style || set the style id on a summary || ISummary || || ||
+|| Core.Style || set the style id on a topic || ITopic || || ||
+|| Core.SummaryAdd || add a summary || ITopic || || ISummary ||
+|| Core.SummaryRemove || remove a summary || ITopic || || ISummary ||
+|| Core.TitleText || set title text on a boundary || IBoundary || String || ||
+|| Core.TitleText || set title text on a relationship || IRelationship || String || ||
+|| Core.TitleText || set title text on a sheet || ISheet || String || ||
+|| Core.TitleText || set title text on a topic || ITopic || String || ||
+|| Core.TitleWidth || set the width of the title on a topic || ITopic || Integer || ||
+|| Core.TopicAdd || add topic || ITopic (parent) || || ITopic (new) ||
+|| Core.TopicFolded || hide children || ITopic || || ||
+|| Core.TopicHyperlink || set a hyperlink / attachment || ITopic || || ||
+|| Core.TopicNotes || notes || ITopic || || ||
+|| Core.TopicRemove || remove topic || ITopic (parent) || || ITopic ||
 
 
 = Conclusion =
