@@ -1,0 +1,54 @@
+#summary How to build XMind and share code using Mercurial and BitBucket
+#labels Phase-Implementation
+
+= Introduction =
+
+XMind is a really nice application and it's great that the source code is available so developers can make tweaks or even add new features.
+
+I think the current set-up for developers can be improved by putting the source inside a version control system and making it easier to track and share patches. Thus, I've created a mirror of the released source code on BitBucket. For those who haven't used it, it's a very good webapp for hosting source-code that's based on the Mercurial version-control system and has lots of features for sharing and following changes.
+
+= Details =
+
+Here are my current repositories on BitBucket
+  * https://bitbucket.org/eug48/xmind3-releases-mirror
+  * https://bitbucket.org/eug48/xmind3-external-deps
+  * https://bitbucket.org/eug48/xmind3-patches (mq repository with a few of my tweaks)
+
+= Building within Eclipse =
+
+You probably want to be a little familiar with Mercurial - there are many online tutorials and it should be time well-spent :)
+  # Install Mercurial (e.g. by downloading TortoiseHg)
+  # Clone the Mercurial repositories
+    # Run `hg clone https://eug48@bitbucket.org/eug48/xmind3-releases-mirror`
+    # Run `hg clone https://eug48@bitbucket.org/eug48/xmind3-external-deps`
+  # Start Eclipse and select a workspace in a new _empty_ folder. I'm using Eclipse 3.7 (Indigo) *for RCP and RAP Developers*, with Sun JRE6. 
+  # Import XMind's external dependencies
+    # Go to File --> Import
+    # Select "Plug-ins and Fragments"
+    # Choose to import from a directory and select the directory where the xmind3-external-deps repo has been cloned
+    # Choose to select from all plug-ins
+    # Choose "Binary projects with linked content"
+    # Press next
+    # There should be 3 plug-ins available. Press "Add all".
+    # Press finish. The three plug-ins should be added without build errors.
+  # Import the XMind source code
+    # Go to File --> Import
+    # Select "Existing projects into workspace"
+    # Under "Select root directory" pick the directory where the xmind3 source (e.g. xmind3-releases-mirror) has been cloned
+    # Press "Select All"
+    # Press Finish. 
+    # I'm currently getting 1 build error - "An API baseline has not been set for the current workspace." To fix it: Preferences --> API baselines --> Add Baseline --> type a name --> press Reset --> press Finish --> accept a full build. There should now be no errors.
+  # Running XMind from within Eclipse
+    # Go to Run Configurations
+    # Expand "Eclipse Application"
+    # You can select the pre-existing Windows/OSX or duplicate one of them to make a config for Linux.
+    # Press Run - XMind should start.
+
+= Building stand-alone packages =
+TODO
+
+= Collaboration =
+With BitBucket it's easy to fork the mirror to create your own repository. This will hopefully make it easier to get started and synchronise to new releases. They also let you pull code from others, "follow" other people's updates and more.
+
+
+<g:plusone size="medium"></g:plusone>
