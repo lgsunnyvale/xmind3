@@ -1,4 +1,4 @@
-#summary How to build XMind and share code using Mercurial and !BitBucket
+#summary How to build XMind and share code using Mercurial and BitBucket
 #labels Phase-Implementation
 
 = Introduction =
