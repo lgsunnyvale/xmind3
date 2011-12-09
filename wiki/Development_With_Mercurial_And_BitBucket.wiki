@@ -41,7 +41,7 @@ You probably want to be a little familiar with Mercurial - there are many online
   # Run XMind from within Eclipse
     # Go to Run Configurations
     # Expand "Eclipse Application"
-    # You can select the pre-existing Windows/OSX or duplicate one of them to make a config for Linux.
+    # You can select the pre-existing Windows/OSX or duplicate one of them to make a config for Linux. You may need to click "Add Required Plug-ins" in the Plug-ins tab..
     # Press Run - XMind should start.
 
 = Building stand-alone packages =
