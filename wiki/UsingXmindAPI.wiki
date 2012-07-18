@@ -88,11 +88,11 @@ ITopic topic3 = workbook.createTopic();
 In order to be used, a topic must be added to a map.  This is done by adding a topic as a child of another topic.  There are two types of children.  Attached children are direct subtopics of their parent, and will always stay with the parent until detached.  Attached topics inherit the structure of the parent. In addition, Xmind will auto-place all attached topics when it draws the diagram.  Detached children, on the other hand, are manually placed on the diagram and will not move (unless the overlap is disabled, in which case they may be 'bumped' by other topics).  Detached topics do not inherit anything from the parent.
 To control whether a topic is attached or detached, set the appropriate flag when adding the child:
 {{{
-rootTopic.addChild(topic1, ITopic.ATTACHED);
+rootTopic.add(topic1, ITopic.ATTACHED);
 }}}
-Children of a topic are kept in the order added (and displayed in that order).  However you can insert a child in a specific position instead of at the end by specifying a (zero based) index in the addChild() method.  The following line inserts topic2 as the first topic in the mind map:
+Children of a topic are kept in the order added (and displayed in that order).  However you can insert a child in a specific position instead of at the end by specifying a (zero based) index in the add() method.  The following line inserts topic2 as the first topic in the mind map:
 {{{
-rootTopic.addChild(topic2, 0, ITopic.ATTACHED);
+rootTopic.add(topic2, 0, ITopic.ATTACHED);
 }}}
 When adding a detached child topic, it is important to set the location of the topic.  Any detached topic which does not have a location set will default to the center of the diagram, where it will be bumped downward by the central topic.  If you add several detached topics without specifying their location, then you will get a list of them below the root topic, which is usually not what you want.
 Detached child topics are also ordered, however this order is only significant is no position is specified for the topic.  Additionally, attached and detached topics are kept in separate lists, so be aware of this when using the index.
@@ -100,7 +100,7 @@ To set the location of a detached topic, simply create a `Point` object with the
 {{{
 Point detPoint = new Point(500, -400);
 topic3.setPosition(detPoint);
-rootTopic.addChild(topic3, ITopic.DETACHED);
+rootTopic.add(topic3, ITopic.DETACHED);
 }}}
 == Topic Settings ==
 There are some basic methods on the topic that you will use to specify information on it.  Most of these are simple and obvious.
